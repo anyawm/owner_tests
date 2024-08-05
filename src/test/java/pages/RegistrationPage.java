@@ -4,13 +4,11 @@ import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static com.codeborne.selenide.Selenide.open;
 
 import com.codeborne.selenide.SelenideElement;
 import com.github.javafaker.Faker;
 import java.util.Locale;
-import net.bytebuddy.dynamic.loading.InjectionClassLoader.Strategy;
 import pages.components.CalendarComponent;
 import pages.components.PictureComponent;
 import pages.components.StateAndCity;

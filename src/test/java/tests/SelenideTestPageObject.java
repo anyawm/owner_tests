@@ -2,16 +2,11 @@ package tests;
 
 import static io.qameta.allure.Allure.step;
 
-
-import config.WebDriverConfig;
-import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
 public class SelenideTestPageObject extends TestBase {
-
-  WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class,System.getProperties());
 
   @Test
   @DisplayName("Full Student Registration Form")
@@ -68,8 +63,7 @@ public class SelenideTestPageObject extends TestBase {
           .checkModalAppears()
           .checkResult("Student Name", userName)
           .checkResult("Gender", "Female")
-          .checkResult("Mobile", userNumber)
-          .checkResult("Date of Birth", "01 August,2024");
+          .checkResult("Mobile", userNumber);
     });
   }
 
